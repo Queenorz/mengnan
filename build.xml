@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="zq" default="test">
+    <target name="test">
+        <echo>
+            test
+        </echo>
+    </target>
+</project>
