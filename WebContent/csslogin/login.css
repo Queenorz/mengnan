@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    line-height: 1.8;
+}
+a {
+    text-decoration: none;
+}
+#login {
+    margin: 30px auto;
+    max-width: 400px;
+    //padding: 40px;
+}
+.form1 {
+    background: #fff;
+    padding: 20px 100px;
+    color: #333;
+}
+.form1 p {
+    float: left;
+}
+.form1 .form-text {
+    margin-top: 15px;
+}
+.form1 .form-text input {
+    width: 100%;
+    padding: 10px;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+}
+.form1 .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: #49c1a2;
+    color: #fff;
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body,ul,i,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+i,em{
+    font-style: normal;
+}
+b,strong{
+    font-weight: normal;
+}
+body{
+    width: 1300px;
+    background-color: rgba(230,230,230);
+    text-align: center;
+    background-image:url('../images/background_login.jpg');
+	background-attachment:fixed
+}
+#whole{
+    width: 600px;
+    margin: 80px auto;
+    padding: 10px;
+    border: azure 1px solid ;
+    background-color: white;
+    background-size: cover;
+}

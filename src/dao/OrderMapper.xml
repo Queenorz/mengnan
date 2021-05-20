@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="dao.OrderMapper">
+    <insert id="addOrder" parameterType="entity.Order">
+        insert into order_s (id,uname,state,date,remarks,food,price,num)values(null,#{uname},#{state},#{date},#{remarks},#{food},#{price},#{num})
+    </insert>
+    <select id="findOrderByu" parameterType="String" resultType="entity.Order">
+        select * from order_s where uname=#{uname}  and zt=1
+    </select>
+    
+    
+    <select id="findOrderByuforCart" parameterType="String" resultType="entity.Order">
+        select * from order_s where uname=#{uname} and zt=0
+    </select>
+    
+    <select id="findOrderByid" parameterType="int" resultType="entity.Order">
+        select * from order_s where id=#{id}
+    </select>
+    
+
+     <update id="delete" parameterType="entity.Order">
+        delete from  order_s  where id=#{id}
+    </update>
+    
+    
+    <select id="findOrderByfood" parameterType="String" resultType="entity.Order">
+        select * from order_s where food=#{food}
+    </select>
+    <update id="orderStateUpdate" parameterType="entity.Order">
+        update order_s set state=#{state} where id=#{id}
+    </update>
+    
+    <update id="orderztUpdate" parameterType="String">
+        update order_s set zt=1 where uname=#{uname}
+    </update>
+    
+    <select id="findOrder" resultType="entity.Order">
+        select * from order_s
+    </select>
+    
+    
+</mapper>
